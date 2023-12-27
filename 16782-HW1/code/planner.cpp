@@ -24,6 +24,10 @@
 // Each node in the cost map has an associated best x and y to which the robot should move to
 // to move towards the nearest, most cost-efficient point in the robot trajectory.
 
+// Future improvements: include hash set of nodes of various useful costs and lengths for each cost map node
+// I.e. if I can reach a point in the trajectory in 18 steps with cost 1200, or 12 steps with cost 1800
+// I want to choose between the two, or other options, depending on how much time I have left
+
 // Struct to hold map positions that need to be expanded in the queue
 struct queue_node
 {
